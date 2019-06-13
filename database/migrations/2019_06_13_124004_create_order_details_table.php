@@ -18,7 +18,7 @@ class CreateOrderDetailsTable extends Migration
             $table->bigInteger('order_id')->nullable()->unsigned();
             $table->bigInteger('product_id')->nullable()->unsigned();
             $table->integer('quantity')->unsigned()->nullable()->default(12);
-            $table->demical('price', 24, 0)->nullable()->default(0);
+            $table->decimal('price', 24, 0)->nullable()->default(0);
             $table->timestamps();
         });
     }
